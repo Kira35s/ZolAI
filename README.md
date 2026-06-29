@@ -27,9 +27,24 @@ does the exact same thing.)
 
 It first asks which tool you're using:
 
-- **Claude Code** — nothing to generate. It already reads `skills/` and
-  `.claude-plugin/` natively; add this repo as a plugin marketplace and
-  install `book-writer`.
+- **Claude Code** — nothing to generate here, but it's a separate one-time
+  step: skills aren't copied per-project, they come from installing the
+  plugin once, after which it's available in every project you open.
+  ```
+  /plugin marketplace add Kira35s/ZolAI
+  /plugin install book-writer@book-writer-marketplace
+  ```
+  (Already cloned the repo? Use the local path instead of `Kira35s/ZolAI`.)
+  For a team setup that enables it automatically, add to that project's
+  `.claude/settings.json`:
+  ```json
+  {
+    "extraKnownMarketplaces": {
+      "book-writer-marketplace": { "source": { "source": "github", "repo": "Kira35s/ZolAI" } }
+    },
+    "enabledPlugins": { "book-writer@book-writer-marketplace": true }
+  }
+  ```
 - **Anything else** (Cursor, Copilot, Codex CLI, ChatGPT, Gemini CLI, ...) —
   generates a single `AGENTS.md` in the current folder, assembled from the
   same `skills/*/SKILL.md` files. Most agentic tools auto-load `AGENTS.md`;
