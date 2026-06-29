@@ -1,1 +1,1 @@
-# Plan — à remplir par outline-architect
+# Outline — to be filled in by outline-architect

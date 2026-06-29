@@ -1,1 +1,1 @@
-# Charte de style — à remplir par style-studio
+# Style charter — to be filled in by style-studio

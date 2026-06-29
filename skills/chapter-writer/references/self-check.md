@@ -1,26 +1,29 @@
-# Auto-vérification du style — checklist du chapter-writer
+# Style self-check — chapter-writer checklist
 
-Avant de présenter un chapitre, le comparer à la charte. L'idée n'est pas une
-métrique rigide mais un garde-fou contre la dérive progressive sur un long texte.
+Before presenting a chapter, compare it against the charter. The idea isn't a
+rigid metric but a guardrail against gradual drift over a long text.
 
-## Vérifications mesurables
-1. **Longueur de phrase** — estimer la moyenne et la comparer à la cible de la
-   charte. Une dérive nette (ex. charte vise 12–22 mots, le chapitre tourne à 35)
-   signale un glissement de registre.
-2. **Temps & personne** — cohérence du temps dominant et de la focalisation sur tout
-   le chapitre. Les ruptures involontaires sont un défaut fréquent.
-3. **Tics bannis** — rechercher les formulations listées dans la charte
-   (« il ne put s'empêcher », adverbes en cascade, etc.). Zéro toléré.
-4. **Registre lexical** — échantillonner mentalement contre le paragraphe étalon :
-   même niveau de langue, même densité d'images ?
+## Measurable checks
 
-## Méthode rapide
-Pour un contrôle reproductible, possibilité de scripter le comptage (longueur
-moyenne de phrase, occurrences des tics) sur le fichier du chapitre — plus fiable
-que l'œil. Mais le jugement final sur le registre reste qualitatif, ancré au
-paragraphe étalon.
+1. **Sentence length** — estimate the average and compare it to the charter's
+   target. A clear drift (e.g. the charter targets 12–22 words, the chapter
+   runs at 35) signals a register slip.
+2. **Tense & person** — consistency of the dominant tense and focalization
+   throughout the chapter. Unintentional breaks are a frequent flaw.
+3. **Banned tics** — search for the phrasings listed in the charter
+   (filler crutches, cascading adverbs, etc.). Zero tolerance.
+4. **Lexical register** — mentally sample against the gold-standard
+   paragraph: same level of language, same density of imagery?
 
-## En cas de dérive
-Révise *avant* de montrer à l'utilisateur. Si la dérive est volontaire (l'utilisateur
-a demandé un registre plus sombre pour cette section), vérifie que c'est bien
-consigné dans la charte / `decisions.md`, sinon propose de l'y inscrire.
+## Quick method
+
+For a reproducible check, it's possible to script the counting (average
+sentence length, tic occurrences) over the chapter file — more reliable than
+the eye. But the final judgment on register stays qualitative, anchored to
+the gold-standard paragraph.
+
+## If drift is found
+
+Revise *before* showing the user. If the drift is intentional (the user asked
+for a darker register in this section), verify it's properly recorded in the
+charter / `decisions.md`, and if not, propose adding it there.

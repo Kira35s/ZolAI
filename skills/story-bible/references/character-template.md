@@ -1,34 +1,34 @@
-# Fiche personnage — TEMPLATE
+# Character sheet — TEMPLATE
 
-Garder concis : c'est une carte de référence, pas une biographie. Ne remplir que ce
-qui sert l'histoire.
+Keep it concise: it's a reference card, not a biography. Only fill in what
+serves the story.
 
 ---
 
-# <Nom>
+# <Name>
 
-- **Rôle** : <protagoniste | antagoniste | secondaire | …>
-- **En une ligne** : <l'essence du personnage>
+- **Role**: <protagonist | antagonist | secondary | …>
+- **In one line**: <the essence of the character>
 
-## Moteur
-- **Désir (want)** : <ce qu'il poursuit consciemment>
-- **Besoin (need)** : <ce qui le guérirait vraiment, souvent ignoré de lui>
-- **Faille / blessure** : <ce qui le freine ou l'aveugle>
-- **Enjeu** : <ce qu'il risque de perdre>
+## Engine
+- **Want**: <what they consciously pursue>
+- **Need**: <what would actually heal them, often unknown to them>
+- **Flaw / wound**: <what holds them back or blinds them>
+- **Stake**: <what they risk losing>
 
-## Voix & présence
-- **Façon de parler** : <rythme, vocabulaire, tics, ce qu'il tait>
-- **Physique marquant** : <2–3 traits utiles à rappeler — cohérence !>
+## Voice & presence
+- **Way of speaking**: <rhythm, vocabulary, tics, what they leave unsaid>
+- **Notable physical traits**: <2–3 useful traits to remember — consistency!>
 
 ## Arc
-- **Départ** : <état initial>
-- **Bascule(s)** : <moments de transformation>
-- **Arrivée** : <état final visé>
+- **Starting point**: <initial state>
+- **Turn(s)**: <moments of transformation>
+- **Endpoint**: <intended final state>
 
-## Relations
-- <Nom — nature du lien, tension>
+## Relationships
+- <Name — nature of the bond, tension>
 
-## Savoir & secrets
-- **Sait que** : <infos qu'il détient — clé pour la cohérence d'information>
-- **Ignore que** : <ce qu'il ne sait pas encore>
-- **Secret** : <ce qu'il cache, à qui>
+## Knowledge & secrets
+- **Knows that**: <information they hold — key for information consistency>
+- **Doesn't know that**: <what they don't know yet>
+- **Secret**: <what they're hiding, from whom>

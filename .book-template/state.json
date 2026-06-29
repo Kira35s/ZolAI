@@ -1,11 +1,12 @@
 {
-  "title": "Sans titre",
+  "title": "Untitled",
+  "author": "",
   "kind": "fiction",
   "phase": "concept",
-  "language": "fr",
+  "language": "en",
   "target_length_words": 80000,
   "chapters_total": 0,
   "chapters_drafted": 0,
-  "next_action": "Cadrer le concept du livre (genre, pitch, public, structure).",
+  "next_action": "Frame the book's concept (genre, pitch, audience, structure).",
   "updated_at": null
 }

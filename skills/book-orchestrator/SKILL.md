@@ -41,6 +41,11 @@ project is a git repo (or offer to `git init`), commit the scaffold as
 "chore: initialize book project". Encourage committing after each phase so the
 decision history is preserved.
 
+If `.book/` already exists but its `state.json` shows `phase: "concept"` with a
+title, author, and language already set, the install wizard (`setup.js`) likely
+ran first — skip scaffolding and hand straight to `book-concept` to finish the
+intake from there.
+
 ## Routing table
 
 | Phase / user intent | Skill to invoke |
@@ -50,11 +55,12 @@ decision history is preserved.
 | Building characters / world / argument map | `story-bible` |
 | Turning concept + bible into a chapter plan | `outline-architect` |
 | Writing or rewriting a chapter | `chapter-writer` |
+| Getting reader-style feedback on a drafted chapter | `beta-reader` |
 | Checking consistency across the manuscript | `continuity-editor` |
 | Assembling the final .docx / .pdf / EPUB | `manuscript-export` |
 
 A healthy default order is: concept → style → bible → outline → drafting (loop with
-continuity passes) → export. But honor the user's wishes — they may want to draft a
+beta-reader and continuity passes) → export. But honor the user's wishes — they may want to draft a
 sample chapter before fully building the bible, and that's fine. When you deviate
 from the canonical order, note it so expectations stay clear.
 
@@ -69,9 +75,9 @@ the user and produces cleaner decisions to record.
 
 When resuming, lead with a short status line, e.g.:
 
-> **"Les Marées d'Argent"** — roman, phase *écriture*. 7/24 chapitres rédigés.
-> Prochaine étape prévue : chapitre 8 (la confrontation au port).
-> On continue, ou tu veux faire autre chose ?
+> **"The Silver Tides"** — novel, phase *drafting*. 7/24 chapters written.
+> Next planned step: chapter 8 (the confrontation at the harbor).
+> Want to continue, or do something else?
 
 Keep it warm and brief. The point is to make a long, multi-session project feel
 coherent and alive.

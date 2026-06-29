@@ -1,1 +1,1 @@
-# Lore / règles du monde
+# Lore / world rules

@@ -1,40 +1,41 @@
-# Charte de style — TEMPLATE
+# Style charter — TEMPLATE
 
-Remplir avec la voix validée par l'utilisateur. Garder ce fichier *opérationnel* :
-chaque ligne doit être actionnable et vérifiable par le skill d'écriture.
+Fill in with the voice validated by the user. Keep this file *operational*:
+every line should be actionable and checkable by the writing skill.
 
 ---
 
-# Charte de style — « <titre> »
+# Style charter — "<title>"
 
-## Voix en une phrase
-<Résumé de la voix retenue, ex. "Narration sobre et littéraire à la 3ᵉ personne,
-focalisation interne serrée, images rares mais fortes.">
+## Voice in one sentence
+<Summary of the chosen voice, e.g. "Sober, literary third-person narration,
+tight internal focalization, rare but striking imagery.">
 
-## Paramètres mesurables
-- **Personne / focalisation** : <1ʳᵉ | 3ᵉ — interne | omnisciente>
-- **Temps dominant** : <présent | passé simple/composé>
-- **Longueur de phrase cible** : <ex. 12–22 mots en moyenne, varier le rythme>
-- **Densité d'images** : <rare et marquante | continue | minimale>
-- **Registre lexical** : <soutenu | courant | familier maîtrisé>
-- **Niveau d'intériorité** : <fort | modéré | faible>
+## Measurable parameters
+- **Person / focalization**: <1st | 3rd — internal | omniscient>
+- **Dominant tense**: <present | simple/compound past>
+- **Target sentence length**: <e.g. 12–22 words on average, vary the rhythm>
+- **Image density**: <rare and striking | continuous | minimal>
+- **Lexical register**: <formal | everyday | controlled colloquial>
+- **Level of interiority**: <high | moderate | low>
 
-## À privilégier
-- <ex. verbes concrets et sensoriels>
-- <ex. dialogues qui révèlent par le sous-texte>
+## To favor
+- <e.g. concrete, sensory verbs>
+- <e.g. dialogue that reveals through subtext>
 
-## À éviter (tics)
-- <ex. adverbes en -ment en cascade>
-- <ex. "il ne put s'empêcher de", "un frisson lui parcourut l'échine">
-- <ex. métaphores météo pour signifier l'humeur>
+## To avoid (tics)
+- <e.g. cascading -ly adverbs>
+- <e.g. "she couldn't help but", "a shiver ran down his spine">
+- <e.g. weather metaphors to signify mood>
 
-## Œuvres / auteurs de référence
-- <2–3 références qui situent la cible, sans copier>
+## Reference works / authors
+- <2–3 references that situate the target, without copying>
 
-## Paragraphe étalon (gold standard)
-> <Un paragraphe validé, dans la voix exacte. C'est l'ancre : le chapter-writer
-> s'y compare pour mesurer la dérive (longueur de phrase, tics, registre).>
+## Gold-standard paragraph
+> <A validated paragraph, in the exact voice. This is the anchor:
+> chapter-writer compares against it to measure drift (sentence length, tics,
+> register).>
 
-## Notes de registre par section (optionnel)
-- <ex. "À partir de l'acte 2 : registre plus sombre, phrases plus brèves." —
-  ajouté le AAAA-MM-JJ, voir decisions.md>
+## Register notes by section (optional)
+- <e.g. "From act 2 onward: darker register, shorter sentences." —
+  added on YYYY-MM-DD, see decisions.md>

@@ -1,71 +1,74 @@
-# Convention mémoire `.book/` — référence partagée
+# `.book/` memory convention — shared reference
 
-Tous les skills de `book-writer` lisent et écrivent dans un dossier `.book/` à la
-racine du projet livre. C'est la **seule** source de vérité persistante. Elle est
-versionnée par git : chaque écriture significative mérite un commit, ce qui donne
-un historique auditable des décisions.
+Every skill in `book-writer` reads and writes to a `.book/` folder at the root of
+the book project. It is the **only** persistent source of truth, and it's
+versioned by git: every significant write deserves a commit, which gives the
+project an auditable history of decisions.
 
-## Arborescence canonique
+## Canonical tree
 
 ```
-<projet-livre>/
+<book-project>/
 ├── .book/
-│   ├── state.json          # phase courante, avancement, prochaine action
-│   ├── concept.md          # pitch, public, genre, longueur cible
-│   ├── style-charter.md    # voix validée par l'utilisateur (référence absolue)
-│   ├── decisions.md        # journal horodaté des arbitrages éditoriaux
-│   ├── outline.md          # plan détaillé chapitre par chapitre
+│   ├── state.json          # current phase, progress, next action
+│   ├── concept.md          # pitch, audience, genre, target length
+│   ├── style-charter.md    # voice validated by the user (absolute reference)
+│   ├── decisions.md        # timestamped log of editorial decisions
+│   ├── outline.md          # detailed chapter-by-chapter plan
 │   ├── bible/
-│   │   ├── characters/<nom>.md
-│   │   ├── places/<nom>.md
-│   │   ├── lore.md         # règles du monde, magie, technologie, contexte
-│   │   └── timeline.md     # chronologie des événements
-│   └── summaries/
-│       └── <NN>-<slug>.md  # résumé ~5 lignes de chaque chapitre écrit
+│   │   ├── characters/<name>.md
+│   │   ├── places/<name>.md
+│   │   ├── lore.md         # world rules, magic, technology, context
+│   │   └── timeline.md     # chronology of events
+│   ├── summaries/
+│   │   └── <NN>-<slug>.md  # ~5-line summary of each written chapter
+│   └── critiques/
+│       └── <NN>-<slug>.md  # beta-reader feedback on each chapter
 └── manuscript/
-    └── <NN>-<slug>.md      # texte des chapitres
+    └── <NN>-<slug>.md      # the chapters' text
 ```
 
-Pour la **non-fiction**, `bible/` contient à la place :
-- `argument-map.md` : thèse centrale, sous-arguments, structure logique
-- `sources.md` : références, citations, faits à vérifier
-- `glossary.md` : termes et définitions à employer de façon cohérente
+For **non-fiction**, `bible/` instead contains:
+- `argument-map.md`: central thesis, sub-arguments, logical structure
+- `sources.md`: references, citations, facts to verify
+- `glossary.md`: terms and definitions to use consistently
 
-## `state.json` — schéma
+## `state.json` — schema
 
 ```json
 {
-  "title": "Titre provisoire",
+  "title": "Working title",
+  "author": "Author name",
   "kind": "fiction | nonfiction",
   "phase": "concept | style | bible | outline | drafting | revision | export",
-  "language": "fr",
+  "language": "en",
   "target_length_words": 80000,
   "chapters_total": 0,
   "chapters_drafted": 0,
-  "next_action": "Description en clair de la prochaine étape",
+  "next_action": "Plain-language description of the next step",
   "updated_at": "ISO-8601"
 }
 ```
 
-`phase` pilote le routage de l'orchestrateur. `next_action` est ce qu'on propose
-à l'utilisateur à la reprise d'une session.
+`phase` drives the orchestrator's routing. `next_action` is what gets proposed
+to the user when a session resumes.
 
-## Règle d'or pour chaque skill
+## Golden rule for every skill
 
-1. **Au démarrage** : lire `state.json`, puis les fichiers `.book/` pertinents pour
-   la tâche (toujours `style-charter.md` quand on écrit de la prose).
-2. **Ne jamais écrire sans validation** de l'utilisateur sur les décisions
-   structurantes (style retenu, mort d'un personnage, changement de cap).
-3. **En fin de tâche** : mettre à jour `state.json` (au moins `phase`,
-   `next_action`, `updated_at`) et journaliser tout arbitrage dans `decisions.md`.
-4. **Économie de contexte** : sur un manuscrit long, charger les `summaries/` plutôt
-   que les chapitres entiers ; ne charger en entier que le chapitre précédent.
+1. **On startup**: read `state.json`, then whichever `.book/` files are relevant
+   to the task (always `style-charter.md` when writing prose).
+2. **Never write without the user's validation** on structural decisions
+   (the chosen voice, a character's death, a change of direction).
+3. **At the end of a task**: update `state.json` (at least `phase`,
+   `next_action`, `updated_at`) and log any decision in `decisions.md`.
+4. **Context economy**: on a long manuscript, load `summaries/` rather than
+   full chapters; load the previous chapter in full only.
 
 ## `decisions.md` — format
 
-Une entrée par décision, la plus récente en haut :
+One entry per decision, most recent at the top:
 
 ```markdown
-## 2025-01-15 — Registre plus sombre à partir de l'acte 2
-Décidé avec l'utilisateur. Raison : tension dramatique. Impacte chapitres 12+.
+## 2025-01-15 — Darker register from act 2 onward
+Decided with the user. Reason: dramatic tension. Affects chapters 12+.
 ```

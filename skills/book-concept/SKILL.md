@@ -13,6 +13,12 @@ light and conversational, not a form to fill out.
 Read the orchestrator's `references/memory-spec.md`. This skill owns
 `.book/concept.md` and initializes `state.json`.
 
+## Starting from a setup.js brief
+If `concept.md` already has content (the install wizard pre-fills title, author,
+language, and optionally inspirations/synopsis/style intent), don't re-ask what's
+already there — confirm it's still accurate, then focus the intake on whatever is
+still marked `_TBD_`.
+
 ## Intake (interactive, option-led)
 Work through these, proposing concrete choices the user can pick from rather than
 asking open questions where possible:

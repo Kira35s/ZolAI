@@ -1,41 +1,42 @@
-# Squelettes de structure — à proposer selon le genre
+# Structure skeletons — to propose based on genre
 
-Propose un squelette adapté, puis laisse l'utilisateur l'adapter. Ce sont des
-points de départ, pas des carcans.
+Propose a fitting skeleton, then let the user adapt it. These are starting
+points, not straitjackets.
 
 ## Fiction
 
-**Trois actes** (polyvalent)
-1. Mise en place : monde, personnage, incident déclencheur (~25%)
-2. Confrontation : obstacles croissants, point médian, tout se complique (~50%)
-3. Résolution : climax, dénouement (~25%)
+**Three acts** (versatile)
+1. Setup: world, character, inciting incident (~25%)
+2. Confrontation: rising obstacles, midpoint, everything gets complicated (~50%)
+3. Resolution: climax, denouement (~25%)
 
-**Voyage du héros** (aventure, fantasy, initiation)
-Monde ordinaire → appel → refus → mentor → passage du seuil → épreuves →
-épreuve suprême → récompense → retour transformé.
+**Hero's journey** (adventure, fantasy, coming-of-age)
+Ordinary world → call → refusal → mentor → crossing the threshold → trials →
+ordeal → reward → transformed return.
 
-**Beats de thriller**
-Crochet → meurtre/menace → enquête → fausse piste → retournement médian →
-resserrement → tout est perdu → climax → twist final.
+**Thriller beats**
+Hook → murder/threat → investigation → false lead → midpoint twist →
+tightening → all is lost → climax → final twist.
 
-**Romance** (si pertinent)
-Rencontre → attirance → obstacle → rapprochement → rupture/malentendu →
-geste décisif → réunion.
+**Romance** (if relevant)
+Meeting → attraction → obstacle → growing closeness → breakup/misunderstanding →
+decisive gesture → reunion.
 
 ## Non-fiction
 
-**Essai argumentatif**
-Thèse → mise en jeu (pourquoi ça compte) → arguments en escalier → objections et
-réponses → implications → conclusion qui ouvre.
+**Argumentative essay**
+Thesis → stakes (why it matters) → escalating arguments → objections and
+responses → implications → conclusion that opens up.
 
-**How-to / professionnel**
-Problème → cadre/promesse → méthode étape par étape → cas concrets → pièges →
-récapitulatif actionnable.
+**How-to / professional**
+Problem → framing/promise → step-by-step method → concrete cases → pitfalls →
+actionable recap.
 
-**Mémoire / récit de vie**
-Fil chronologique ou thématique, scènes-clés, leçon implicite plutôt qu'assénée.
+**Memoir / life story**
+Chronological or thematic thread, key scenes, implicit rather than stated
+lesson.
 
-## Jeunesse / illustré
-Arc simple et rassurant : situation → désir/problème → tentatives → résolution
-émotionnelle. Rythme par double-page, refrains, répétitions structurantes.
-Penser dès le départ au ratio texte/image.
+## Children's / illustrated
+Simple, reassuring arc: situation → desire/problem → attempts → emotional
+resolution. Pace by spread, refrains, structuring repetition. Think about the
+text/image ratio from the start.

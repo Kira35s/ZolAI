@@ -13,7 +13,10 @@ turns a vague wish ("I want it atmospheric but not slow") into a concrete, reusa
 
 Read the orchestrator's `references/memory-spec.md` for the `.book/` convention.
 This skill owns `.book/style-charter.md`. It reads `concept.md` for genre and
-audience context before proposing voices.
+audience context before proposing voices — including a "Style intent" section
+if the install wizard (`setup.js`) captured one. Treat that as a starting hint
+for the 3–4 voices below, not a finished charter; still generate real samples
+and let the user react to them.
 
 ## Workflow
 
@@ -30,16 +33,16 @@ near-duplicates — vary the real levers (see `references/style-dimensions.md`):
 sentence rhythm, distance/POV intimacy, density of imagery, diction register,
 humor, interiority. Label each evocatively and name the tradeoff. Example labels:
 
-- **Sobre & littéraire** — phrases amples, images rares mais fortes, distance maîtrisée
-- **Rythmé & cinématographique** — phrases courtes, présent, sensations, peu d'introspection
-- **Chaleureux & oral** — voix proche, familière, digressions tendres
-- **Dense & exigeant** — syntaxe travaillée, lexique riche, lecteur sollicité
+- **Sober & literary** — ample sentences, rare but striking imagery, controlled distance
+- **Brisk & cinematic** — short sentences, present tense, sensation-driven, little introspection
+- **Warm & conversational** — close, familiar voice, tender digressions
+- **Dense & demanding** — wrought syntax, rich vocabulary, an engaged reader
 
-Present them, then ask which lands — and crucially, invite a *mix* ("le rythme de
-la 2, mais l'imagerie de la 1"). Voice is often a blend.
+Present them, then ask which lands — and crucially, invite a *mix* ("the rhythm
+of #2, but the imagery of #1"). Voice is often a blend.
 
 ### 3. Iterate to a winner
-Re-render the passage in the chosen blend. Repeat until the user says "c'est ça".
+Re-render the passage in the chosen blend. Repeat until the user says "that's it".
 Don't rush this — it's the highest-leverage decision in the project.
 
 ### 4. Write the style charter
@@ -54,8 +57,8 @@ Log the decision in `decisions.md`, set `state.json` phase forward, and tell the
 orchestrator the next step. Commit as "style: lock voice charter".
 
 ## Revising an existing voice
-If a charter already exists and the user wants to shift it ("plus sombre à partir
-de l'acte 2"), don't overwrite blindly — either amend the charter with a scoped
+If a charter already exists and the user wants to shift it ("darker from act 2
+onward"), don't overwrite blindly — either amend the charter with a scoped
 rule or create a section for the new register, and log *why* in `decisions.md`.
 Chapters already written stay as they are unless the user asks to retrofit them.
 

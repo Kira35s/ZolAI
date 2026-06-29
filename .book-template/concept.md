@@ -1,1 +1,1 @@
-# Concept — à remplir par book-concept
+# Concept — to be filled in by book-concept

@@ -1,3 +1,3 @@
-# Journal des décisions éditoriales
+# Editorial decisions log
 
-La plus récente en haut.
+Most recent entry at the top.

@@ -49,6 +49,9 @@ keeps voice stable across the whole manuscript. See `references/self-check.md`.
    update the bible so it stays the source of truth.
 3. Increment `chapters_drafted`, set `next_action` to the following chapter, update
    `state.json`. Commit as "draft: chapter <NN> — <title>".
+4. Offer the user a choice: a `beta-reader` pass on this chapter now, or move
+   straight to the next one. Don't run it automatically — it's a proposed step,
+   not a mandatory gate.
 
 ## Revising an existing chapter
 Load the existing text plus the reason for the rewrite. Preserve what works; change

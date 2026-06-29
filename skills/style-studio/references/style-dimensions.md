@@ -1,37 +1,39 @@
-# Leviers de style — pour générer des voix réellement distinctes
+# Style levers — for generating genuinely distinct voices
 
-Quand tu produis des échantillons, fais varier ces leviers de façon marquée d'un
-échantillon à l'autre. Deux voix qui ne diffèrent que par un mot sur dix ne servent
-à rien : l'utilisateur doit *entendre* le contraste.
+When producing samples, vary these levers sharply from one sample to the
+next. Two voices that differ by only one word in ten serve no purpose — the
+user needs to *hear* the contrast.
 
-## Les leviers principaux
+## The main levers
 
-1. **Rythme de phrase** — longueur moyenne, variété, fragments. Phrases courtes =
-   tension, urgence. Phrases amples = contemplation, autorité.
-2. **Distance narrative** — caméra collée à la peau du personnage (intériorité,
-   sensations) vs. recul panoramique (vue d'ensemble, ironie possible).
-3. **Point de vue & temps** — 1ʳᵉ/3ᵉ personne, focalisation interne/omnisciente,
-   présent (immédiateté) vs. passé (recul, conte).
-4. **Densité d'images** — métaphores rares mais frappantes vs. imagerie continue
-   vs. prose dépouillée, factuelle.
-5. **Registre lexical** — soutenu, courant, familier, technique. Cohérence du
-   niveau de langue.
-6. **Interiorité** — combien on entre dans les pensées vs. on reste sur l'action et
-   le dialogue.
-7. **Humour & ironie** — absent, pince-sans-rire, chaleureux, mordant.
-8. **Musicalité** — allitérations, cadence, répétitions voulues vs. neutralité.
+1. **Sentence rhythm** — average length, variety, fragments. Short sentences =
+   tension, urgency. Long, ample sentences = contemplation, authority.
+2. **Narrative distance** — camera glued to the character's skin (interiority,
+   sensations) vs. panoramic pull-back (overview, room for irony).
+3. **Point of view & tense** — 1st/3rd person, internal/omniscient
+   focalization, present (immediacy) vs. past (distance, storytelling).
+4. **Image density** — rare but striking metaphors vs. continuous imagery vs.
+   stripped-down, factual prose.
+5. **Lexical register** — formal, everyday, colloquial, technical. Consistency
+   of the language level.
+6. **Interiority** — how much we enter the thoughts vs. stay on action and
+   dialogue.
+7. **Humor & irony** — absent, deadpan, warm, biting.
+8. **Musicality** — alliteration, cadence, deliberate repetition vs.
+   neutrality.
 
-## Pièges à éviter dans les échantillons
+## Pitfalls to avoid in the samples
 
-- Ne pas confondre *style* et *contenu* : c'est le même passage, rendu autrement.
-- Ne pas faire 4 variantes du même registre « légèrement plus/moins » — il faut de
-  vrais partis pris opposés.
-- Toujours nommer le **compromis** de chaque voix (ce qu'elle gagne / ce qu'elle
-  sacrifie), pour que le choix soit éclairé.
+- Don't confuse *style* and *content*: it's the same passage, rendered
+  differently.
+- Don't produce 4 variants of the same register "slightly more/less" — they
+  need to be genuinely opposed choices.
+- Always name the **tradeoff** of each voice (what it gains / what it
+  sacrifices), so the choice is informed.
 
-## Pour la non-fiction
+## For non-fiction
 
-Les leviers se transposent : autorité vs. complicité, abstraction vs. exemples
-concrets, « je » assumé vs. effacement de l'auteur, densité d'arguments par
-paragraphe, recours aux anecdotes, ton (académique, journalistique, conversationnel,
-manifeste).
+The levers translate as: authority vs. complicity, abstraction vs. concrete
+examples, an assumed "I" vs. authorial effacement, argument density per
+paragraph, use of anecdotes, tone (academic, journalistic, conversational,
+manifesto-like).
