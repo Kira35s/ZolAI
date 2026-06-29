@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-// Interactive installer for book-writer. Run it from inside the folder where
-// you want your book project to live — outputs land in the current
-// directory; the skills/.book-template content this reads from lives
-// alongside this script (wherever book-writer was cloned).
+// Interactive installer for book-writer — `npx github:Kira35s/ZolAI`, run
+// from inside the folder where you want your book project to live. Outputs
+// land in the current directory; the skills/.book-template content this
+// reads from lives alongside this script (wherever npx/git put the clone).
 //
 // Claude Code reads skills/*/SKILL.md natively — nothing to generate there.
 // Every other agentic tool gets a single generated AGENTS.md, assembled from
@@ -160,7 +160,16 @@ function today() {
   return new Date().toISOString().slice(0, 10);
 }
 
-function buildConceptMd({ title, author, language, inspirations, synopsis, styleIntent }) {
+function buildConceptMd({
+  title,
+  author,
+  language,
+  inspirations,
+  synopsis,
+  styleIntent,
+  styleAuthors,
+  useAuthorStyle,
+}) {
   let md = "# Concept — to be filled in by book-concept\n\n";
   md += "## Basics\n";
   md += `- **Title**: ${title}\n`;
@@ -176,6 +185,19 @@ function buildConceptMd({ title, author, language, inspirations, synopsis, style
   if (styleIntent) {
     md += `\n## Style intent (raw, pre-style-studio)\n${styleIntent}\n`;
     md += "\n_Collected at setup time — style-studio should treat this as a starting\npoint for the voice samples, not a final charter._\n";
+  }
+  if (styleAuthors) {
+    md += "\n## Style-inspiring authors\n";
+    md += `- **Authors**: ${styleAuthors}\n`;
+    md += `- **Research their style for voice proposals**: ${useAuthorStyle ? "yes" : "no — mentioned for context only"}\n`;
+    if (useAuthorStyle) {
+      md +=
+        "\n_style-studio should look into what's known about these authors' work and " +
+        "writing style (web search if available, otherwise its own knowledge) and let " +
+        "concrete traits — sentence rhythm, point of view, imagery, register — inform " +
+        "the voice options it proposes. Draw on what makes their style distinctive; " +
+        "don't present an outright imitation as one of the choices._\n";
+    }
   }
 
   md += "\n---\n_Fields marked TBD are intentionally unfinished — book-concept (and\n";
@@ -213,6 +235,17 @@ async function runProjectWizard(ask) {
     'Tone/voice you\'re going for, e.g. "dark and literary" (optional): '
   );
 
+  const styleAuthors = await ask(
+    "Any specific authors whose writing style inspires you for this book, comma-separated (optional): "
+  );
+  let useAuthorStyle = false;
+  if (styleAuthors) {
+    const answer = await ask(
+      `Should style-studio look into ${styleAuthors}'s style and let it inform the voices it proposes? [Y/n]: `
+    );
+    useAuthorStyle = !/^n/i.test(answer);
+  }
+
   copyDirRecursive(TEMPLATE_DIR, BOOK_DIR);
   fs.mkdirSync(MANUSCRIPT_DIR, { recursive: true });
 
@@ -228,16 +261,31 @@ async function runProjectWizard(ask) {
 
   fs.writeFileSync(
     path.join(BOOK_DIR, "concept.md"),
-    buildConceptMd({ title, author, language, inspirations, synopsis, styleIntent }),
+    buildConceptMd({
+      title,
+      author,
+      language,
+      inspirations,
+      synopsis,
+      styleIntent,
+      styleAuthors,
+      useAuthorStyle,
+    }),
     "utf8"
   );
 
   const decisionsPath = path.join(BOOK_DIR, "decisions.md");
-  const entry =
+  let entry =
     `\n## ${today()} — Project initialized via setup.js\n` +
     "Captured title, author, and language, plus any inspirations, synopsis, " +
     "and style intent given. Recorded as a starting brief for book-concept and " +
-    "style-studio to build on.\n";
+    "style-studio to build on.";
+  if (styleAuthors) {
+    entry += useAuthorStyle
+      ? ` Opted in to have style-studio research ${styleAuthors}'s style for inspiration.`
+      : ` Noted ${styleAuthors} as influences, without opting in to style research.`;
+  }
+  entry += "\n";
   fs.writeFileSync(decisionsPath, fs.readFileSync(decisionsPath, "utf8").trimEnd() + "\n" + entry, "utf8");
 
   console.log(`\nScaffolded .book/ and manuscript/ in ${CWD}.`);

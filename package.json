@@ -1,0 +1,23 @@
+{
+  "name": "book-writer",
+  "version": "0.1.0",
+  "description": "An interactive book-writing agent: a collection of skills that takes a project from idea to finished manuscript, with persistent memory (style charter, story bible, outline, decision log) versioned in the project repo.",
+  "author": "Simon",
+  "license": "MIT",
+  "bin": {
+    "book-writer": "./setup.js"
+  },
+  "files": [
+    "setup.js",
+    "skills",
+    ".book-template",
+    ".claude-plugin"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kira35s/ZolAI.git"
+  }
+}

@@ -27,7 +27,17 @@ If nothing concrete exists yet, write one neutral paragraph that fits the genre 
 use it as the constant across samples. Using the *same* passage every time is what
 lets the user actually hear the difference between voices.
 
-### 2. Propose 3–4 distinct voices
+### 2. Research style-inspiring authors, if requested
+Check `concept.md` for a "Style-inspiring authors" section. If it's there and
+research was opted in, look into what's known about each author's work and
+writing style — web search if you have one available, otherwise your own
+knowledge of them — before generating samples. Extract concrete, usable traits
+(sentence rhythm, point of view, imagery habits, register, structural quirks),
+not vague labels like "literary". If research wasn't opted in, the authors were
+named for context only — don't go digging for style traits, just keep the names
+in mind as a vague compass.
+
+### 3. Propose 3–4 distinct voices
 Generate the same passage in 3–4 genuinely different registers. Don't make them
 near-duplicates — vary the real levers (see `references/style-dimensions.md`):
 sentence rhythm, distance/POV intimacy, density of imagery, diction register,
@@ -38,21 +48,26 @@ humor, interiority. Label each evocatively and name the tradeoff. Example labels
 - **Warm & conversational** — close, familiar voice, tender digressions
 - **Dense & demanding** — wrought syntax, rich vocabulary, an engaged reader
 
+If step 2 surfaced real traits from the user's named authors, fold one or two into
+the options as a labeled influence ("channels <author>'s short, declarative
+rhythm") — but never present an outright imitation as one of the choices. The goal
+is an original voice informed by what the user admires, not a pastiche.
+
 Present them, then ask which lands — and crucially, invite a *mix* ("the rhythm
 of #2, but the imagery of #1"). Voice is often a blend.
 
-### 3. Iterate to a winner
+### 4. Iterate to a winner
 Re-render the passage in the chosen blend. Repeat until the user says "that's it".
 Don't rush this — it's the highest-leverage decision in the project.
 
-### 4. Write the style charter
+### 5. Write the style charter
 Capture the locked voice in `.book/style-charter.md` using the exact template in
 `references/charter-template.md`. The charter must be *operational*, not poetic:
 concrete rules a writer skill can follow and self-check against (target sentence
 length range, tense, POV, tics to avoid, reference works, a gold-standard sample
 paragraph). Vague charters ("write beautifully") are useless downstream.
 
-### 5. Record and update state
+### 6. Record and update state
 Log the decision in `decisions.md`, set `state.json` phase forward, and tell the
 orchestrator the next step. Commit as "style: lock voice charter".
 
