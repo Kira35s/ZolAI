@@ -1,0 +1,11 @@
+﻿{
+  "name": "book-writer-marketplace",
+  "owner": { "name": "Simon" },
+  "plugins": [
+    {
+      "name": "book-writer",
+      "source": "./",
+      "description": "Agent d'écriture de livres : collection de skills, mémoire persistante."
+    }
+  ]
+}
