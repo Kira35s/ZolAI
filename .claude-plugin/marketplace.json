@@ -3,7 +3,7 @@
   "owner": { "name": "Simon" },
   "plugins": [
     {
-      "name": "book-writer",
+      "name": "ZolAI",
       "source": "./",
       "description": "Book-writing agent: collection of skills, persistent memory."
     }

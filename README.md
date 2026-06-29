@@ -32,7 +32,7 @@ It first asks which tool you're using:
   plugin once, after which it's available in every project you open.
   ```
   /plugin marketplace add Kira35s/ZolAI
-  /plugin install book-writer@ZolAI
+  /plugin install ZolAI@ZolAI
   ```
   (Already cloned the repo? Use the local path instead of `Kira35s/ZolAI`.)
   For a team setup that enables it automatically, add to that project's
@@ -42,7 +42,7 @@ It first asks which tool you're using:
     "extraKnownMarketplaces": {
       "ZolAI": { "source": { "source": "github", "repo": "Kira35s/ZolAI" } }
     },
-    "enabledPlugins": { "book-writer@ZolAI": true }
+    "enabledPlugins": { "ZolAI@ZolAI": true }
   }
   ```
 - **Anything else** (Cursor, Copilot, Codex CLI, ChatGPT, Gemini CLI, ...) —
