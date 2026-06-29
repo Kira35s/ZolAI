@@ -181,7 +181,7 @@ function buildConceptMd({
   md += "- **Audience**: _TBD_\n";
   md += "- **Target length & structure**: _TBD_\n";
 
-  if (inspirations) md += `\n## Inspirations / comparable works\n${inspirations}\n`;
+  if (inspirations) md += `\n## Comparable works\n${inspirations}\n`;
   if (synopsis) md += `\n## Synopsis\n${synopsis}\n`;
   if (styleIntent) {
     md += `\n## Style intent (raw, pre-style-studio)\n${styleIntent}\n`;
@@ -229,7 +229,7 @@ async function runProjectWizard(ask) {
   const author = await ask("Author name: ");
   const language = (await ask("Language the book will be written in (e.g. en, fr, es) [en]: ")) || "en";
   const inspirations = await ask(
-    "Inspirations / comparable books or authors, comma-separated (optional): "
+    "Comparable books — titles that situate this project, comma-separated (optional): "
   );
   const synopsis = await ask("A sentence or two about what the book is about (optional): ");
   const styleIntent = await ask(

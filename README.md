@@ -54,13 +54,13 @@ It first asks which tool you're using:
 truth. Re-run `setup.js` (option 2) any time a skill changes to refresh it.
 
 It then offers to scaffold a new book project right there: working title,
-author name, language, and — optional — inspirations/comparable works, a
-short synopsis, the tone/voice you're going for, and specific authors whose
-style inspires you (with an explicit yes/no on whether `style-studio` should
-research their style for the voice samples). This seeds `.book/` (title,
-author, language in `state.json`; the rest in `concept.md`) so that when you
-open the folder in your AI tool, `book-concept` and `style-studio` pick up
-from a real starting brief instead of a blank slate.
+author name, language, and — optional — comparable books, a short synopsis,
+the tone/voice you're going for, and specific authors whose *style* inspires
+you (with an explicit yes/no on whether `style-studio` should research their
+style for the voice samples). This seeds `.book/` (title, author, language in
+`state.json`; the rest in `concept.md`) so that when you open the folder in
+your AI tool, `book-concept` and `style-studio` pick up from a real starting
+brief instead of a blank slate.
 
 ## The skills
 
