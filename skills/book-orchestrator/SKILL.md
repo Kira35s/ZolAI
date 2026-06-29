@@ -71,6 +71,20 @@ writing structural decisions to memory. Where a tappable/option UI is available,
 prefer offering 2–4 concrete choices over open-ended questions — it's faster for
 the user and produces cleaner decisions to record.
 
+## When the user seems lost (applies system-wide)
+
+If the user signals confusion — "I don't know", "I'm lost", "what does that
+mean", a one-word non-answer, or just stalling — don't just repeat the question.
+Restate, in plain language, where the project stands and why this particular
+question matters right now, then offer one reasonable default they can simply
+accept instead of having to decide from scratch ("if you're not sure, I'd go
+with X — want me to run with that?"). Let them take the default or redirect;
+either way, note in `decisions.md` whether the choice was deliberate or a
+default, so a later session can tell the difference.
+
+This is the escape hatch for the interactivity principle above: still propose,
+never assume — but make "just pick for me" a valid answer, not a dead end.
+
 ## Keeping the user oriented
 
 When resuming, lead with a short status line, e.g.:

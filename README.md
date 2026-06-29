@@ -83,6 +83,9 @@ A ready-to-copy template is provided in `.book-template/`.
 
 - **Interactivity**: every skill proposes options and waits for validation
   before writing a structural decision.
+- **Getting unstuck**: if the user seems lost, restate the current step in
+  plain language and offer a sensible default they can accept instead of
+  deciding from scratch.
 - **Anti voice-drift**: `chapter-writer` self-checks against the charter
   (sentence length, banned tics, register) after each chapter.
 - **Controlled context**: for a long book, rolling summaries are loaded
