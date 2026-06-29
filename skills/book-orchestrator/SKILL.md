@@ -87,6 +87,27 @@ default, so a later session can tell the difference.
 This is the escape hatch for the interactivity principle above: still propose,
 never assume — but make "just pick for me" a valid answer, not a dead end.
 
+## Plain punctuation (applies system-wide)
+
+Every skill writes plain, straight punctuation in anything that ends up in the
+user's project — manuscript prose, `concept.md`, bible entries, `outline.md`,
+`decisions.md`, critique notes, dialogue rewrites. Never the typographic
+variants an editor or phone keyboard might auto-substitute:
+
+- No em dashes (—) or en dashes (–). Rephrase, or use a comma, a colon, or a
+  period instead.
+- No curly/typographic quotation marks (" "  ' '). Use straight double (")
+  and single (') quotes.
+- No curly apostrophes ('). Use the straight apostrophe (').
+- No non-breaking spaces (U+00A0). Use a regular space.
+- No Unicode bullet characters (•, ‣, ▪, etc.) for lists. Use Markdown's plain
+  list markers (`-` or `1.`) instead.
+
+Check for these before saving or presenting content, the same way
+`chapter-writer` checks prose against the style charter. This rule is about
+character set, not voice — it applies regardless of how literary or casual
+the locked style is.
+
 ## Keeping the user oriented
 
 When resuming, lead with a short status line, e.g.:

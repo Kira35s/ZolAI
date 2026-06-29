@@ -36,7 +36,10 @@ presenting it:
 - Average sentence length within the charter's target range?
 - Correct tense and POV throughout?
 - None of the banned tics present?
-- Registre consistent with the gold-standard paragraph?
+- Register consistent with the gold-standard paragraph?
+- Plain straight punctuation only — no em/en dashes, curly quotes or
+  apostrophes, non-breaking spaces, or Unicode bullets (system-wide rule,
+  see the orchestrator's "Plain punctuation" principle)?
 
 If it drifts, revise before showing the user. This automated check is far more
 reliable than trusting "I wrote it in the right style" — it's the guardrail that

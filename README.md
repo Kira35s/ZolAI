@@ -104,6 +104,9 @@ A ready-to-copy template is provided in `.book-template/`.
   deciding from scratch.
 - **Anti voice-drift**: `chapter-writer` self-checks against the charter
   (sentence length, banned tics, register) after each chapter.
+- **Plain punctuation**: no em/en dashes, curly quotes or apostrophes,
+  non-breaking spaces, or Unicode bullets in anything generated — straight
+  ASCII punctuation only.
 - **Controlled context**: for a long book, rolling summaries are loaded
   instead of every chapter; only the previous chapter is loaded in full.
 - **Decision memory**: every decision goes into `decisions.md` so the
