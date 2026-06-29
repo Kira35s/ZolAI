@@ -36,6 +36,7 @@ const SKILL_ORDER = [
   "outline-architect",
   "chapter-writer",
   "beta-reader",
+  "dialogue-coach",
   "continuity-editor",
   "manuscript-export",
 ];

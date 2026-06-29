@@ -56,13 +56,15 @@ intake from there.
 | Turning concept + bible into a chapter plan | `outline-architect` |
 | Writing or rewriting a chapter | `chapter-writer` |
 | Getting reader-style feedback on a drafted chapter | `beta-reader` |
+| Polishing dialogue / checking characters sound distinct | `dialogue-coach` |
 | Checking consistency across the manuscript | `continuity-editor` |
 | Assembling the final .docx / .pdf / EPUB | `manuscript-export` |
 
 A healthy default order is: concept → style → bible → outline → drafting (loop with
-beta-reader and continuity passes) → export. But honor the user's wishes — they may want to draft a
-sample chapter before fully building the bible, and that's fine. When you deviate
-from the canonical order, note it so expectations stay clear.
+beta-reader, dialogue-coach, and continuity passes) → export. But honor the user's
+wishes — they may want to draft a sample chapter before fully building the bible,
+and that's fine. When you deviate from the canonical order, note it so expectations
+stay clear.
 
 ## Interactivity principle (applies system-wide)
 

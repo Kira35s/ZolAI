@@ -73,6 +73,7 @@ from a real starting brief instead of a blank slate.
 | `outline-architect` | Concept + bible → chapter-by-chapter outline. |
 | `chapter-writer` | Writes one chapter at a time, using the charter + bible + rolling summaries. |
 | `beta-reader` | Reacts to a drafted chapter like a real reader and asks questions to improve it. |
+| `dialogue-coach` | Polishes dialogue and flags characters whose voices sound too alike. |
 | `continuity-editor` | Audits the manuscript's consistency against its bible. |
 | `manuscript-export` | Compiles to .docx / PDF / EPUB. |
 
