@@ -57,6 +57,7 @@ intake from there.
 | Writing or rewriting a chapter | `chapter-writer` |
 | Getting reader-style feedback on a drafted chapter | `beta-reader` |
 | Polishing dialogue / checking characters sound distinct | `dialogue-coach` |
+| Applying the user's own located edit notes ("lines 20-30 I want this instead", quoting a sentence to change) | `revision-editor` |
 | Checking consistency across the manuscript | `continuity-editor` |
 | Assembling the final .docx / .pdf / EPUB | `manuscript-export` |
 

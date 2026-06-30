@@ -74,6 +74,7 @@ brief instead of a blank slate.
 | `chapter-writer` | Writes one chapter at a time, using the charter + bible + rolling summaries. |
 | `beta-reader` | Reacts to a drafted chapter like a real reader and asks questions to improve it. |
 | `dialogue-coach` | Polishes dialogue and flags characters whose voices sound too alike. |
+| `revision-editor` | Applies the user's own located edit notes (cited lines or quoted sentences) to a chapter. |
 | `continuity-editor` | Audits the manuscript's consistency against its bible. |
 | `manuscript-export` | Compiles to .docx / PDF / EPUB. |
 
